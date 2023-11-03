@@ -5,10 +5,11 @@ const useCalculator = () => {
 
   const style = {
     operator:
-      "border border-gray-200 rounded-lg bg-orange-400 text-white text-3xl",
-    number: "border border-gray-200 rounded-lg bg-gray-200 text-3xl",
+      "border border-gray-200 rounded-lg bg-orange-400 text-white text-3xl hover:bg-orange-500 active:-translate-y-5 duration-500",
+    number:
+      "border border-gray-200 rounded-lg bg-gray-200 text-3xl hover:bg-gray-300 active:-translate-y-5 duration-500",
     equal:
-      "border border-gray-200 rounded-lg col-start-4 row-start-2 row-end-6 bg-orange-400 text-white text-3xl",
+      "border border-gray-200 rounded-lg col-start-4 row-start-2 row-end-6 bg-orange-400 text-white text-3xl hover:bg-orange-500 active:-translate-y-5 duration-500 ",
   };
 
   const handleDisplay = (value) => {

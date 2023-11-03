@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-slate-200 ">
       <div className="flex flex-col items-center w-[400px] h-[500px] rounded-xl">
-        <div className="w-[400px] h-[100px] flex justify-end items-center text-5xl bg-gray-900 text-white p-5 rounded-t-xl">
+        <div className="w-[400px] h-[150px] flex justify-end items-center text-5xl bg-gray-900 text-white p-5 rounded-t-xl overflow-hidden">
           <h1>{input}</h1>
         </div>
         <div className="grid grid-cols-4 grid-row-5 gap-4 border border-gray-200 shadow-xl w-[100%] h-[100%] p-5 bg-white rounded-b-xl">
@@ -24,7 +24,7 @@ function App() {
             onClick={() => handleDisplay("-")}
           />
           <Button
-            text={"*"}
+            text={"x"}
             style={style.operator}
             onClick={() => handleDisplay("*")}
           />
